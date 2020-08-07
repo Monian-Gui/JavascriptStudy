@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .soild_text_one {
+            width: 500px;
+            margin: 0 auto;
+        }
+
+        fieldset {
+            height: 500px;
+            border-left: none;
+            border-right: none;
+            border-bottom: none;
+            color: #009688;
+            border-color: #defffc;
+            height: 20px;
+        }
+        legend {
+            text-align: center;
+            padding: 0 10px;
+            font-size: 14px;
+        }
+        .soild_text_two {
+            text-align: center;
+            width: 500px;
+            margin: 0 auto;
+            height: 20px;
+            font-size: 14px;
+            color: #4caf50;
+        }
+        hr {
+            width: 200px;
+            display: inline-block;
+            vertical-align: middle;
+            border-color: #e4ffe6;
+        }
+        span {
+            padding: 0 10px;
+        }
+        .soild_text_three {
+            position: relative;
+            text-align: center;
+            width: 500px;
+            margin: 20px auto;
+            height: 20px;
+            font-size: 14px;
+            color: #ff9800;
+        }
+        .soild_text_three::before,
+        .soild_text_three::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            border: solid 1px #fbdfb6;
+            width: 40%;
+        }
+        .soild_text_three::before {
+            left: 0;
+        }
+        .soild_text_three::after {
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="soild_text_one">
+        <fieldset>
+            <legend>历史活动一</legend>
+        </fieldset>
+    </div>
+
+    <div class="soild_text_two">
+        <hr /><span>历史活动二</span>
+        <hr />
+    </div>
+
+    <div class="soild_text_three">
+        历史活动三
+    </div>
+</body>
+
+</html>
